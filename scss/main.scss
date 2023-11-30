@@ -1,0 +1,262 @@
+@import 'var';
+
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: #fcf5ef;
+    margin-left: 5px;
+    overflow-x: hidden;
+    
+    margin-right: 5px;
+
+}
+.btn-close-dark{
+ background: none;
+ transition: all 1.8s;
+ border: none;
+ transform: translate(100%);
+ color: #000;
+ z-index: 10;
+ overflow:hidden;
+ visibility: hidden;
+ position: fixed;
+ right: 25px;
+ top: 15px;
+ padding: 10px;
+}
+.list{
+    display: block;
+    overflow: hidden;
+    visibility: hidden;
+    position:fixed;
+    top: 0;
+    right: 0;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding-top: 50px;
+    list-style: none;
+    font-weight: 800;
+    transform: translateX(100%);
+    background: #fcf5ef;
+    transition: all 2s;
+    
+    & li{
+        margin-top: 80px;
+        display: flex;
+        align-items: baseline;
+        text-align: center;
+        justify-content: center;
+    }
+    & a{
+        text-decoration: none;
+        color: #000;
+        margin-right: 25px;
+        &:hover{
+            color: $primary-red;
+
+        }
+        
+        
+        
+    }
+}
+
+@font-face {
+    font-family: Inter;
+    src: url('/assets/fonts/static/Inter-Regular.ttf');
+    src: url('/assets/fonts/static/Inter-Regular.ttf');
+    src: url('/assets/fonts/static/Inter-ExtraBold.ttf');
+}
+
+
+.navbar-nav {
+    margin-top: 18px;
+
+    & .navbar-toggler {
+        border: none;
+        font-size: 20px;
+
+    }
+
+}
+.lead{
+    margin-top: 15px;
+    font-size: 45px;
+    line-height: 50px;
+    text-transform: capitalize;
+    font-family: Inter;;
+    
+}
+.lista{
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.tit{
+    font-weight: 300;   
+}
+.btn-read{
+    border: none;
+    background: $primary-red;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 14px;
+    padding: 13px;
+    padding-left: 35px;
+    padding-right: 35px;
+    margin-top: 12px;
+    font-weight: 500;
+
+}
+.blue{
+    background: $very-dark-blue;
+    padding: 15px;
+    margin-top: 60px;
+
+    & .new{
+        color: $primary-orange;
+        margin-bottom: 30px;
+        margin-top: 10px;
+    }
+    & .h3{
+        color: #fcf5ef;
+        text-wrap: nowrap;
+    }
+    & .p{
+        color: #fcf5ef;
+        font-weight: lighter;
+    }
+}
+.num{
+    color: rgba(128, 128, 128, 0.414);
+    font-weight: 700;
+    font-size: 30px;
+    margin: 0;
+}
+.header{
+    font-weight: bolder;
+    color: $very-dark-blue;
+}
+.text{
+    font-size: 15px;
+    font-weight: 300;
+    color: rgb(128, 128, 128);
+}
+.imagen {
+    display: none;
+}
+.imagen-1{
+    width: 100%;
+}
+
+@media screen and (min-width:1440px) {
+.imagen{
+    display: block;
+    width: 700px;
+    
+}
+body{
+    overflow-x: hidden;
+}
+.navbar-toggler-icon{
+    display: none;
+}
+.imagen-1{
+    display:none ;
+}
+.father{
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 730px 400px;
+    grid-template-rows: 300px 160px 450px;
+    columns: 2;
+    row-gap: 0;
+    column-gap: 0;
+
+}
+.lista{
+    display: flex;
+    visibility: visible;
+    grid-row-start: 3;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    height: fit-content;
+    margin-top: 40px;
+    align-items: center;
+    & .li{
+        height: 100%;
+        width: 400px;
+        margin-top: 0;
+        
+    }
+}
+
+.navbar-nav{
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    & .container-fluid{
+        align-items: baseline
+    }
+}
+.btn-close-dark{
+    display: none;
+}
+.ot{
+    width: 700px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-row-start: 2;
+    grid-column-end: 2;
+    justify-content: space-around;
+    align-items: center;
+    grid-gap: 50px;
+    margin-top: 0;
+}
+.list{
+    visibility: visible;
+    list-style: none;
+    display: flex;
+height: auto;
+    position: relative;
+    transform: none;
+    transition: none;
+    position: relative;
+    align-items: center;
+    margin-right: 110px;
+    justify-content: center;
+    text-decoration: none;
+    & li{
+        margin-top: 0;
+    }
+    & a{
+        text-decoration: none;
+        color: #000;
+        margin-top: 0;
+        margin-left: 30px;
+        &:hover{
+            color: $primary-red;
+        }
+
+    }
+}
+.hay{
+    text-align: left;
+
+}
+.blue{
+    margin: 0;
+    grid-row-start: 1 ;
+    grid-row-end: 3;
+}
+body{
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+}
+
+
