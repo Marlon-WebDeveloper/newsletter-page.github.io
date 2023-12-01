@@ -15,7 +15,7 @@ body {
 
 .btn-close-dark {
   background: none;
-  transition: all 1.8s;
+  transition: all 1s;
   border: none;
   transform: translate(100%);
   color: #000;
