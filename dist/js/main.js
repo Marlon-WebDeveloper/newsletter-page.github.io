@@ -13,7 +13,7 @@ close.style.transform = `translateX(0)`
 })
 close.addEventListener("click",()=>{
     lista.style.transform = `translateX(100%)`
-    close.style.transform = `translateX(120%)`
+    close.style.transform = `translateX(150%)`
     btn.style.display = `block`
     lista.style.visibility = `hidden`
 close.style.visibility = `hidden`
