@@ -7,6 +7,11 @@ body {
   overflow-x: hidden;
   margin-right: 5px;
 }
+@font-face {
+  font-family: Inter;
+
+  src: url("/assets/fonts/static/Inter-ExtraBold.ttf");
+}
 
 .btn-close-dark {
   background: none;
@@ -56,12 +61,7 @@ body {
   color: hsl(5, 85%, 63%);
 }
 
-@font-face {
-  font-family: Inter;
-  src: url("/assets/fonts/static/Inter-Regular.ttf");
-  src: url("/assets/fonts/static/Inter-Regular.ttf");
-  src: url("/assets/fonts/static/Inter-ExtraBold.ttf");
-}
+
 .navbar-nav {
   margin-top: 18px;
 }
